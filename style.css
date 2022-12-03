@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+}
+
+canvas {
+  margin: 0;
+}
+
+#screen {
+    image-rendering: optimizeSpeed;             /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;                 /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+@font-face {
+  font-family: "Glasstown-NBP";
+  src: url("./fonts/GlasstownNbpRegular-RyMM.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/GlasstownNbpRegular-RyMM.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/GlasstownNbpRegular-RyMM.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/GlasstownNbpRegular-RyMM.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/GlasstownNbpRegular-RyMM.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/GlasstownNbpRegular-RyMM.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

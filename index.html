@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GMTK">
+    
+    <title>GMTK</title>
+	<link rel="stylesheet" href="style.css">
+    <canvas id="screen"></canvas>
+	<script onload="GMTK.main()" src="out/gmtk/fullOpt/dest/out.js" defer></script>
+    
+  </head>
+  <body>
+	
+    <script>
+      const screen = document.getElementById("screen")
+      function fixSize () {
+        screen.width = window.innerWidth
+        screen.height = window.innerHeight
+      }
+      window.addEventListener("resize", fixSize)
+	  fixSize()
+	  
+    </script>
+  </body>
+</html>
